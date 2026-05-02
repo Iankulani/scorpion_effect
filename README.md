@@ -12,18 +12,23 @@
 
 ### Deploy to GitHub/GitLab
 
-```bash
 # Clone your repository
-git clone https://github.com/Iankulani/scorpion_effect.git
 
+```bash
+git clone https://github.com/Iankulani/scorpion_effect.git
 cd scorpion-effect
+```
 
 # Add all files
-
+```bash
 git add .
+```
 
 # Commit
+```bash
 git commit -m "Initial commit: Scorpion-Effect v2.0"
-
+```
 # Push to remote
+```bash
 git push -u origin main
+```
