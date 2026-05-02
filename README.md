@@ -40,52 +40,72 @@
 
 ### Docker (Recommended)
 
-```bash
+
 # Clone repository
-git clone https://gitlab.com/scorpion/scorpion-effect.git
+```bash
+git clone https://github.com/Iankulani/scorpion_effect.git
 cd scorpion-effect
 
-# Start with Docker Compose
-docker-compose up -d
+```
 
+# Start with Docker Compose
+```bash
+docker-compose up -d
+```
 # Access web interface
+```bash
 open http://localhost:5000
-Manual Installation
-bash
+```
+
+# Manual Installation
 # Linux/Mac
+
+```bash
 chmod +x install.sh
 ./install.sh
 ./start_scorpion.sh
-
+```
 # Windows
+```bash
 batch_install.bat
 scorpion_venv\Scripts\python scorpion_effect.py
+```
 Using Python
-bash
 # Create virtual environment
+```bash
 python3 -m venv venv
+```
 source venv/bin/activate  # Linux/Mac
 # venv\Scripts\activate  # Windows
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 # Run application
+```bash
 python3 scorpion_effect.py
-📋 Docker Commands
-bash
+```
+# 📋 Docker Commands
+
 # Build Alpine image
+```bash
 docker build -t scorpion-effect:alpine -f Dockerfile .
-
+```
 # Run container
+
+```bash
 docker run -d -p 5000:5000 -p 8080:8080 --name scorpion scorpion-effect:alpine
-
+```
 # View logs
+```bash
 docker logs -f scorpion
-
+```
 # Stop container
+```bash
 docker stop scorpion
-🔧 Configuration
+```
+# 🔧 Configuration
 Edit .scorpion-effect/config.json:
 
 json
@@ -100,9 +120,9 @@ json
     "enable_telegram": true,
     "enable_slack": true
 }
-🎮 Command Reference
-Social Engineering
-bash
+# 🎮 Command Reference
+# Social Engineering
+```bash
 phish_facebook      # Generate Facebook phishing link
 phish_instagram     # Generate Instagram phishing link
 phish_twitter       # Generate Twitter phishing link
@@ -131,18 +151,19 @@ add_ip <ip>        # Add IP to monitoring
 block_ip <ip>      # Block IP address
 🌐 Web Interface
 Access the web terminal at http://localhost:5000
+```
 
-Features:
+# Features:
 
-Real-time command execution
+* Real-time command execution
 
-Scorpion stinger game
+* Scorpion stinger game
 
-Visual terminal interface
+* Visual terminal interface
 
-Multi-session support
+* Multi-session support
 
-🐳 GitLab CI/CD Pipeline
+# 🐳 GitLab CI/CD Pipeline
 The .gitlab-ci.yml provides:
 
 Security Scan: Bandit, Safety checks
@@ -164,13 +185,16 @@ text
 │  Discord    │   Telegram    │   Slack/GChat      │
 │  Bot        │   Bot         │   Integration      │
 └─────────────┴──────────────┴────────────────────┘
-🔐 Security Notice
+# 🔐 Security Notice
+
 IMPORTANT: This tool is for authorized security testing and educational purposes only. Users must:
 
-Obtain written permission before testing
+* Obtain written permission before testing
 
-Comply with all applicable laws
+* Comply with all applicable laws
 
-Not use for unauthorized activities
+* Not use for unauthorized activities
 
-Report vulnerabilities responsibly
+* Report vulnerabilities responsibly
+
+# Star Hisotry
