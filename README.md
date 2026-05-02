@@ -107,7 +107,7 @@ docker stop scorpion
 ```
 # 🔧 Configuration
 Edit .scorpion-effect/config.json:
-
+```bash
 json
 {
     "discord_token": "YOUR_DISCORD_BOT_TOKEN",
@@ -120,6 +120,8 @@ json
     "enable_telegram": true,
     "enable_slack": true
 }
+```
+
 # 🎮 Command Reference
 # Social Engineering
 ```bash
@@ -130,26 +132,33 @@ phish_gmail         # Generate Gmail phishing link
 phish_start <id>    # Start phishing server
 phish_stop          # Stop phishing server
 phish_creds         # View captured credentials
-Network Scanning
-bash
+```
+# Network Scanning
+
+```bash
 scan <target>       # Quick port scan
 nmap <target>       # Full nmap scan
 ping <target>       # ICMP echo request
 traceroute <target> # Network path tracing
 whois <domain>      # WHOIS lookup
-Traffic Generation
-bash
+```
+# Traffic Generation
+
+```bash
 traffic icmp <ip> <duration>  # ICMP flood
 traffic tcp <ip> <duration>   # TCP connections
 traffic http <ip> <duration>  # HTTP requests
-System Management
-bash
+```
+# System Management
+```bash
 status              # Show system status
 history            # Command history
 sysinfo            # System information
 add_ip <ip>        # Add IP to monitoring
 block_ip <ip>      # Block IP address
-🌐 Web Interface
+```
+# 🌐 Web Interface
+```bash
 Access the web terminal at http://localhost:5000
 ```
 
@@ -164,27 +173,18 @@ Access the web terminal at http://localhost:5000
 * Multi-session support
 
 # 🐳 GitLab CI/CD Pipeline
+
 The .gitlab-ci.yml provides:
 
-Security Scan: Bandit, Safety checks
+* Security Scan: Bandit, Safety checks
 
-Build: Multi-stage Alpine Docker builds
+* Build: Multi-stage Alpine Docker builds
 
-Test: Unit, integration, performance tests
+* Test: Unit, integration, performance tests
 
-Deploy: Staging/Production deployment
+* Deploy: Staging/Production deployment
 
-📊 Architecture
-text
-┌─────────────────────────────────────────────────┐
-│              SCORPION-EFFECT CORE                │
-├─────────────┬──────────────┬────────────────────┤
-│  Command    │   Database    │   Web Interface    │
-│  Handler    │   Manager     │   (Flask/SocketIO) │
-├─────────────┼──────────────┼────────────────────┤
-│  Discord    │   Telegram    │   Slack/GChat      │
-│  Bot        │   Bot         │   Integration      │
-└─────────────┴──────────────┴────────────────────┘
+
 # 🔐 Security Notice
 
 IMPORTANT: This tool is for authorized security testing and educational purposes only. Users must:
