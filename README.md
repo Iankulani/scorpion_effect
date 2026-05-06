@@ -1,5 +1,8 @@
 # 🦂 SCORPION-EFFECT v2.0
 
+<img width="900" height="500" alt="scorpion" src="https://github.com/user-attachments/assets/f02c86a8-6813-41cb-91ae-100869eee4c7" />
+
+
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/scorpion-effect)](https://github.com/Iankulani/scorpion-effect/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Iankulani/scorpion-effect)](https://github.com/Iankulani/scorpion-effect/network)
 [![GitHub issues](https://img.shields.io/github/issues/Iankulani/scorpion-effect)](https://github.com/Iankulani/scorpion-effect/issues)
